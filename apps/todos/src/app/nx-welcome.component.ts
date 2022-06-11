@@ -121,7 +121,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
         grid-template-columns: 1fr;
         margin-top: 3.5rem;
       }
-      #hero .text-container {
+      #hero .text-contaer {
         color: rgba(255, 255, 255, 1);
         padding: 3rem 2rem;
       }

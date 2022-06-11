@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+
+import { Component, Input } from '@angular/core';
+import { Todo } from '@myorg/data';
+
+
+
 
 @Component({
   selector: 'myorg-root',
@@ -6,5 +11,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'todos';
+  @Input() todos: Todo[] = [];
+  constructor(){
+  
+  }
+ 
 }
