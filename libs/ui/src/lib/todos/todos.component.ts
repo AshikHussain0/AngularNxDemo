@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import {DataService} from 'apps/api/src/app/data.service';
 
 
 
@@ -9,35 +10,19 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./todos.component.css'],
 })
 export class TodosComponent implements OnInit {
-  states = ['Maharashtra','Gujrat','Punjab','Haryana','Uttar Pradesh','Tamil nadu'];
-  cities = ['Mumbai','New Delhi','Chennai','Bangaluru','Hyderabad','Ahmedabad','Pune',];
-  ut = ['Pondicherry','Daman and Diu','Delhi NCT','Andaman and Nicobar Island'];
-  title='';
-  
-  all:string[] = [];
 
+all:string[] = [];
 
   
 
-  constructor() {}
+  constructor(private dataservice:DataService) {
+    this.all = this.dataservice.getSac();
+     
+    
+  }
 
   ngOnInit(): void {
    
   }
-getStates(){
-  this.all = this.states;
-  this.title='States';
-  
-}
-getCities(){
-  this.all = this.cities;
-  this.title = 'Cities';
-  
-  
-}
-getUts(){
-  this.all = this.ut;
-  this.title = 'Union Territory';
-  
-}
+
 }

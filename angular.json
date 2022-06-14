@@ -7,6 +7,5 @@
     "todos": "apps/todos",
     "todos-e2e": "apps/todos-e2e",
     "ui": "libs/ui"
-  },
-  "style": ["style.css", "../node_modules/bootstrap/dist/css/bootstrap.min.css"]
+  }
 }

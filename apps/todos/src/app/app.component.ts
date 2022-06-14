@@ -1,9 +1,6 @@
 
 import { Component, Input } from '@angular/core';
-import { Todo } from '@myorg/data';
-
-
-
+import {DataService} from 'apps/api/src/app/data.service';
 
 @Component({
   selector: 'myorg-root',
@@ -11,9 +8,12 @@ import { Todo } from '@myorg/data';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  @Input() todos: Todo[] = [];
   constructor(){
-  
+    
+      
+    }
+   
+    
   }
+  
  
-}

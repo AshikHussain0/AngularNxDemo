@@ -1,11 +1,8 @@
-<ul>
-  <li><button (click)="getStates()">States</button></li>
-  <li><button (click)="getCities()">Cities</button></li>
-  <li><button (click)="getUts()">Union Territories</button>
-  </li>
-</ul>
-<h3>{{title}}</h3>
-<hr>
-<ul>
-  <li class="list" *ngFor="let t of all" >{{t}}</li>
-</ul>
+<!-- Displaying South Asian Countries -->
+<div>
+<h3>South Asian Countries</h3>
+  <ul>
+    <li class="m-1 list" *ngFor="let t of all">{{t}}</li>
+  </ul>
+
+</div>
